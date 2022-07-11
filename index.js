@@ -3,7 +3,9 @@ const configureDB = require('./database/db')
 const router = require('./routes/messageRoutes')
 const app = express()
 const Port = process.env.PORT || 4001
-const cookieParser = require('cookie-parser');
+
+require('dotenv').config();
+
 
 
 configureDB()
