@@ -2,7 +2,8 @@ const express = require('express')
 const configureDB = require('./database/db')
 const router = require('./routes/messageRoutes')
 const app = express()
-const Port = 4000
+const Port = process.env.PORT || 4001
+const cookieParser = require('cookie-parser');
 
 
 configureDB()
